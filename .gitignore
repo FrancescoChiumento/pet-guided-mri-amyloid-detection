@@ -205,3 +205,35 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Medical imaging data (never commit patient data)
+*.nii
+*.nii.gz
+*.dcm
+*.4dfp.*
+*.ifh
+
+# Dataset CSVs with patient info
+data/
+datasets/
+*.csv
+*.tsv
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Training outputs
+experiments/
+runs/
+logs/
+saliency/
+evaluation_plots/
+*.log
+
+# VS Code Local History
+.history/
+.claude/
